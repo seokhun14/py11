@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>몬스터 잡기 게임</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; }
+    #game-area { width: 500px; height: 400px; border: 2px solid black; margin: 0 auto; position: relative; }
+    .monster { width: 50px; height: 50px; background: red; position: absolute; border-radius: 50%; cursor: pointer; }
+    #score, #timer { font-size: 20px; margin: 10px; }
+  </style>
+</head>
+<body>
+  <h1>몬스터 잡기 게임</h1>
+  <div id="score">점수: 0</div>
+  <div id="timer">남은 시간: 10초</div>
+  <button onclick="startGame()">게임 시작</button>
+  <div id="game-area"></div>
+
+  <script src="game.js"></script>
+</body>
+</html>
